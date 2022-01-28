@@ -73,7 +73,7 @@ export default function ChatPage() {
                                 setMensagem(valor);
                             }}
                             onKeyPress={(event) => {
-                                if (event.key == "Enter") {
+                                if (event.key === "Enter") {
                                     event.preventDefault();
                                     handleNovaMensagem(mensagem);
                                 }
@@ -156,7 +156,7 @@ function MessageList(props) {
                                     display: 'inline-block',
                                     marginRight: '8px',
                                 }}
-                                src={`https://github.com/vanessametonini.png`}
+                                src={`https://github.com/luizfernandofreitas.png`}
                             />
                             <Text tag="strong">
                                 {mensagem.de}
